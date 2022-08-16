@@ -50,7 +50,7 @@ function clicked(){
     
 // }
 // Solution 2 
-const buttons = document.getElementsByClassName('btn'); 
+const buttons = document.getElementsByClassName('panda-btn-bye-now'); 
 for (const btn of buttons) {
     console.log(buttons)
    btn.addEventListener('click', function(event){
@@ -63,3 +63,18 @@ for (const btn of buttons) {
 // ; 
 // secret.style.display = 'none'; 
 // })
+
+
+// ৭. একদম নিচে একটা LET'S STAY IN TOUCH নামে একটা জিনিস আছে। সেখানে তুমি submit বাটনটা disable করে ফেলবে। তারপর কেউ যদি উপরে input ফিল্ডে যদি একজাক্টলি email শব্দটা লিখে। তাহলে বাটন একটিভ হবে। আর যদি অন্য কিছু লিখে তাহলে বাটনটা একটিভ হবে না। 
+
+const submitTextField = document.getElementById('submit-input-text').addEventListener('keyup', function(event){
+   const inputField = event.target.value; 
+
+   const submitButton = document.getElementById('btn-submit'); 
+
+   if(inputField === 'email'){
+        submitButton.removeAttribute('disabled')
+   }
+   else submitButton.setAttribute('disabled', true)
+}); 
+
