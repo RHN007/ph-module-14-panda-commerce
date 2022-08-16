@@ -18,3 +18,25 @@ h2[0].style.color='lightblue';
 // ৩. ওই ওয়েবসাইট এ backpack আইডি দিয়ে একটা সেকশন আছে। সেই সেকশনের ব্যাকগ্রাউন্ড কালার tomato করে দিতে পারো কিনা। 
 
 const section = document.getElementById('shoes').style.backgroundColor='tomato'; 
+
+//৪. card ক্লাস যতগুলা জায়গায় ইউজ করা হয়েছে সবগুলা কার্ড এর বর্ডার রেডিয়াস ৩০px করে দিতে পারো কিনা 
+
+const card= document.getElementsByClassName('card'); 
+
+for (let i=0; i<card.length; i++){
+    card[i].style.borderRadius = '30px'; 
+}
+
+//৫. কোন একটা ফাংশন লিখো। সেটার ভিতরে কনসোল লগ হবে। এবং সেই ফাংশন টা ক্লিক হ্যান্ডলার হিসেবে কোন একটা বাটনে যোগ করো 
+
+// document.getElementById('buy-now').addEventListener('click', function(){
+//     console.log('I am clicked')
+// })
+
+function clicked(){ 
+    console.log('I am clicked')
+}
+
+
+// ৬. এইবার নতুন করে সবগুলা buy now বাটনে এমন একটা ইভেন্ট হ্যান্ডলার যোগ করো। যাতে যেকোন একটা buy now বাটনে চাপ দিলে সেটা ওয়েবসাইট থেকে রিমুভ হয়ে যায়। একটু চিন্তা করে করার চেষ্টা করো। 
+
