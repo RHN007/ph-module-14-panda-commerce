@@ -40,3 +40,26 @@ function clicked(){
 
 // ৬. এইবার নতুন করে সবগুলা buy now বাটনে এমন একটা ইভেন্ট হ্যান্ডলার যোগ করো। যাতে যেকোন একটা buy now বাটনে চাপ দিলে সেটা ওয়েবসাইট থেকে রিমুভ হয়ে যায়। একটু চিন্তা করে করার চেষ্টা করো। 
 
+// const buttonRemove = document.getElementsByClassName('btn'); 
+// for (let i = 0; i < buttonRemove.length; i++) {
+//     const element = buttonRemove[i];
+//     console.log(element)
+//     element.addEventListener('click', function(event){
+//         event.target.parentNode.removeChild(event.target)
+//     })
+    
+// }
+// Solution 2 
+const buttons = document.getElementsByClassName('btn'); 
+for (const btn of buttons) {
+    console.log(buttons)
+   btn.addEventListener('click', function(event){
+        event.target.parentNode.removeChild(event.target)
+    })
+    
+}
+
+// const secret = document.getElementById('secret-info')
+// ; 
+// secret.style.display = 'none'; 
+// })
